@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="LeonidTask" max_length="40" name="x_417338_leonid_leonidtask" sizeclass="3" type="collection">
+        <element default="EMA" label="event" max_length="200" name="event" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Choice 1" display="true" label="StatusChoice" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="open" label="Status Options" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="Closed" sequence="1" value="closed"/>
+                <element inactive_on_update="false" label="Pending" sequence="2" value="pending"/>
+            </choice>
+        </element>
+        <element label="Arrival Due Date" max_length="40" name="u_due_date_1" type="due_date"/>
+        <element attributes="edge_encryption_enabled=true" label="When needed" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element label="Handler Reference" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
+    </element>
+</database>

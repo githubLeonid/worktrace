@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="alm_asset" label="event" max_length="40" name="x_417338_leonid_event" type="collection">
+        <element default="MALTA" display="true" label="Master" max_length="100" name="master" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="EVENTCODE" max_length="100" name="u_string_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+    </element>
+</database>
